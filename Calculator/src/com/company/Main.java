@@ -15,7 +15,7 @@ public class Main {
             double x = Double.parseDouble(args[0]);
             char operation = args[1].charAt(0);
             double y = Double.parseDouble(args[2]);
-            if ( operation == '/' && y > -1e-12 || operation == '/' && y < 1e-12) {
+            if (operation == '/' && y > -1e-12 || operation == '/' && y < 1e-12) {
                 throw new IllegalArgumentException("You stupid. It's fail");
             }
             System.out.println(calc(x, y, operation));
