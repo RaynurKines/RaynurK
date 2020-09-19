@@ -10,7 +10,7 @@ public class Main {
             char operation = args[1].charAt(0);
             double y = Double.parseDouble(args[2]);
             System.out.println(calc(x, y, operation));
-        }catch(NumberFormatException ex){
+        } catch (NumberFormatException ex) {
             System.out.println("Invalid number format");
         }
     }
