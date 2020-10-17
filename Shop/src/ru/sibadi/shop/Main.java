@@ -6,7 +6,6 @@ import java.util.List;
 
 public class Main {
     public static void main(String[]args){
-        System.out.println("Hello World");
         List<Product> products = new ArrayList<>();
         products.add(new Product("Bread", 25));
         products.add(new Product("Butter", 40));
