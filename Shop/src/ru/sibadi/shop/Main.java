@@ -9,7 +9,9 @@ public class Main {
         List<Product> products = new ArrayList<>();
         products.add(new Product("Bread", 25));
         products.add(new Product("Butter", 40));
-        System.out.println(products.get(0).getName() + " : " + products.get(0).getPrice());
-        System.out.println(products.get(1).getName() + " : " + products.get(1).getPrice());
+        products.add(new Product("Milk", 70));
+        for (Product product: products) {
+            System.out.println(product);
+        }
     }
 }
