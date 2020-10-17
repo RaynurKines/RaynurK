@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Shop {
     private final List<Product> products = new ArrayList<>();
+    private final List<Buy> purchases = new ArrayList<>();
 
     public Shop() {
         products.add(new Product("Bread", 25));
@@ -14,5 +15,15 @@ public class Shop {
 
     public List<Product> getProducts() {
         return products;
+    }
+
+    public List<Buy> getPurchases() {
+        return purchases;
+    }
+
+    public Buy createBuy(Customer c, Product p) {
+        Buy buy = new Buy(c, p);
+        purchases.add(buy);
+        return buy;
     }
 }

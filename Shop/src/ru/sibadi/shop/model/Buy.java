@@ -4,7 +4,7 @@ public class Buy {
     private final Customer customer;
     private final Product product;
 
-    public Buy(Customer customer, Product product) {
+    Buy(Customer customer, Product product) {
         this.customer = customer;
         this.product = product;
     }
