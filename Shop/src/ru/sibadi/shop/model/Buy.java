@@ -3,10 +3,11 @@ package ru.sibadi.shop.model;
 public class Buy {
     private final Customer customer;
     private final Product product;
-
-    Buy(Customer customer, Product product) {
+    private final Sale sale;
+    Buy(Customer customer, Product product, Sale sale) {
         this.customer = customer;
         this.product = product;
+        this.sale = sale;
     }
 
     public Customer getCustomer() {

@@ -2,6 +2,7 @@ package ru.sibadi.shop;
 
 import ru.sibadi.shop.model.Customer;
 import ru.sibadi.shop.model.Product;
+import ru.sibadi.shop.model.Sale;
 import ru.sibadi.shop.model.Shop;
 
 public class Main {
@@ -18,6 +19,7 @@ public class Main {
 
 
         System.out.println(shop.createBuy(danil, shop.getProducts().get(0)));
+        shop.setSale(Sale.BLACK_FRIDAY);
         System.out.println(shop.createBuy(tatyana, shop.getProducts().get(2)));
     }
 }
