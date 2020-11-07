@@ -3,6 +3,8 @@ package ru.sibadi.shop.model;
 public class Customer {
     private final String name;
     private double money;
+    private boolean regular = false;
+    public int score = 0;
 
     public Customer(String name, double money) {
         this.name = name;
@@ -19,6 +21,14 @@ public class Customer {
 
     public void setMoney(double money) {
         this.money = money;
+    }
+
+    public boolean isRegular() {
+        return regular;
+    }
+
+    public void setRegular(boolean regular) {
+        this.regular = regular;
     }
 
     @Override

@@ -31,9 +31,19 @@ public class Shop {
     }
 
     public Buy createBuy(Customer c, Product p) {
+        if (c.score == 3)
+            c.setRegular(true);
         Buy buy = new Buy(c, p, sale);
         purchases.add(buy);
+        c.score += 1;
         return buy;
+    }
+
+    public void watchPurchases() {
+        System.out.println("\nPurchases:");
+        for (Buy buy : getPurchases()) {
+            System.out.println(buy);
+        }
     }
 
 }
