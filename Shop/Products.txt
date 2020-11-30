@@ -1,0 +1,3 @@
+Bread 25.0
+Butter 40.0
+Milk 70.0
