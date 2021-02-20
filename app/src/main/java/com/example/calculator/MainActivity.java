@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         display.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(getString(R.string.display).equals(display.getText().toString())){
+                if (getString(R.string.display).equals(display.getText().toString())) {
                     display.setText("");
                 }
             }
